@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTTP</title>
+</head>
+
+<body style=" background-color: mintcream">
+
+<div style="margin: 10px; padding: 10px">
+
+  <div>
+    <h1>HTTP</h1>
+    <p><strong>H</strong> - Hyper</p>
+    <p><strong>T</strong> - Text </p>
+    <p><strong>T</strong> - Transfer </p>
+    <p><strong>P</strong> - Protocol </p>
+
+    <br/>
+    <h2>Parts of HTTP (<a href="https://developer.mozilla.org/ru/docs/Web/HTTP/Messages" target="_blank">HTTP
+      Messages</a>)</h2>
+
+    <ul>
+      <li>
+        Start Line
+      </li>
+      <li>
+        Header
+      </li>
+      <li>
+        Blank Line
+      </li>
+      <li>
+        Body
+      </li>
+    </ul>
+
+  </div>
+
+  <div>
+    <table style="width: 100%; max-width:900px; border: 1px solid black; border-collapse: collapse; text-align: center">
+      <caption>HTTP Start Line</caption>
+      <tr>
+        <th></th>
+        <th>REQUEST</th>
+        <th>RESPONSE</th>
+      </tr>
+      <tr>
+        <td>Name</td>
+        <td>Start Line, Request Line</td>
+        <td>Start Line, Response Line, Status Line</td>
+      </tr>
+      <tr>
+        <td><a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">HTTP Version </a></td>
+        <td>HTTP/1.1</td>
+        <td>HTTP/1.1</td>
+      </tr>
+      <tr>
+        <td><a href="https://developer.mozilla.org/ru/docs/Web/HTTP/Methods" target="_blank">Method </a></td>
+        <td>GET, POST, PUT, DELETE ...</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>API Program Folder Location</td>
+        <td>/search, /posts, /users</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Parameters</td>
+        <td>?q=search_keyword, ?q=news</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="https://developer.mozilla.org/ru/docs/Web/HTTP/Status" target="_blank"> Status Code</a></td>
+        <td>-</td>
+        <td>200 OK, 400 Bad Request, 403 Forbidden, 404 Not Found ...</td>
+      </tr>
+      <tr>
+        <td>Format</td>
+        <td>Method + API Program Folder Location + Parameters + HTTP Version</td>
+        <td>HTTP Version + Status Code</td>
+      </tr>
+      <tr>
+        <td>Sample</td>
+        <td>GET /search?q=react HTTP/1.1</td>
+        <td>HTTP/1.1 200 OK</td>
+      </tr>
+    </table>
+    <br/>
+  </div>
+
+  <div>
+    <p>
+      <a href="https://developer.mozilla.org/ru/docs/Web/HTTP/Заголовки" target="_blank">HTTP Headers</a> &
+      <a href="https://en.wikipedia.org/wiki/List_of_HTTP_header_fields" target="_blank">Header Fields</a>
+    </p>
+    <p>Blank Line - where the HTTP Head finishes & HTTP Body begins</p>
+    <p>HTTP Body - content sent to (or from) the API</p>
+    <p>Content-Type: text/html, image, audio, video, multipart/form-data, XML, JSON ... <a
+      href="https://developer.mozilla.org/ru/docs/Web/HTTP/Basics_of_HTTP/MIME_types#важные_для_web-разработчиков_mime_типы"
+      target="_blank">MIME types</a></p>
+  </div>
+
+  <div>
+    <h2>
+      <a href="../index.html">HOME</a>
+    </h2>
+  </div>
+
+</div>
+
+</body>
+</html>

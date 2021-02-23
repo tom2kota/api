@@ -15,6 +15,8 @@
 
 ```
 npm i
+npm run dev
 npm run start
 npm run build
 ```
+Server running at [http://localhost:1234](http://localhost:1234)
