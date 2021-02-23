@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="dog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="name" type="xs:string"/>
+        <xs:element name="breed" type="xs:string"/>
+        <xs:element name="age" type="xs:positiveInteger"/>
+        <xs:element name="happy" type="xs:boolean"/>
+        <xs:element name="license" type="xs:string"/>
+        <xs:element name="owner" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

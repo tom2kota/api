@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>XML</title>
+</head>
+<body style=" background-color: mintcream">
+<div style="margin: 10px; padding: 10px">
+  <div>
+    <h1>XML</h1>
+    <p><strong>X</strong> - Extensible</p>
+    <p><strong>M</strong> - Markup </p>
+    <p><strong>L</strong> - Language </p>
+    <br/>
+    <p>
+      HTTP Header Line: Content-Type: application/xml
+    </p>
+    <p>
+      HTTP Body: XML
+    </p>
+    <br/>
+    <h3>
+      <a href="xml-sample.xml" target="_blank">
+        XML Sample
+      </a>
+    </h3>
+    <pre style=" background-color: #cccccc; border-radius: 5px">
+    <code style="  font-family: monospace;">
+      <message> Hi There! </message>
+      <dog>
+        <name>Bf</name>
+        <breed>bowwow</breed>
+        <age>2</age>
+        <happy>yes</happy>
+        <license>x0x0x0</license>
+        <owner>Bob Thunk</owner>
+      </dog>
+    </code>
+    </pre>
+    <br/>
+
+    <h3>
+      <a href="xsd-sample.xsd" target="_blank">
+        Schema (XML Schema Definition):
+      </a>
+    </h3>
+    <pre style=" background-color: #cccccc; border-radius: 5px">
+      <code>
+        &lt;xsd:element name="dog"&gt;
+          &lt;xsd:complexType&gt;
+            &lt;xsd:sequence&gt;
+              &lt;xsd:element name="name" type="xsd:string"/&gt;
+              &lt;xsd:element name="breed" type="xsd:string"/&gt;
+              &lt;xsd:element name="age" type="xsd:positiveInteger"/&gt;
+              &lt;xsd:element name="happy" type="xsd:boolean"/&gt;
+              &lt;xsd:element name="license" type="xsd:string"/&gt;
+              &lt;xsd:element name="owner" type="xsd:string"/&gt;
+            &lt;/xsd:sequence&gt;
+          &lt;/xsd:complexType&gt;
+        &lt;/xsd:element&gt;
+      </code>
+    </pre>
+    <br/>
+
+  </div>
+  <div>
+    <h2>
+      <a href="../index.html">HOME</a>
+    </h2>
+  </div>
+</div>
+
+</body>
+</html>
