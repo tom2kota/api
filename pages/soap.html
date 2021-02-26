@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SOAP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body style="background-color: mintcream;">
+<div style="margin: 10px; padding: 10px;">
+  <div>
+    <h1>SOAP</h1>
+    <p><strong>S</strong> - Simple </p>
+    <p><strong>O</strong> - Object </p>
+    <p><strong>A</strong> - Access </p>
+    <p><strong>P</strong> - Protocol </p>
+    <br/>
+    <p>
+      Rules to form HTTP Request / Response
+    </p>
+    <p>
+      Uses a WSDL (Web Services Description Language)
+    </p>
+    <p>Request Parts:</p>
+    <p>&ndash; <strong>Start Line</strong> POST WSDL HTTP Version</p>
+    <p>&ndash; <strong>Header Line</strong> Content-Type: text/xml</p>
+    <p>&ndash; <strong>Blank Line</strong></p>
+    <p>&ndash; <strong>Body</strong> XML envelope formed using <a href="https://www.soapui.org/docs/soap-and-wsdl/working-with-wsdls/" target="_blank"> WSDL</a> </p>
+    <br/>
+
+    <h3>
+      <a href="./soap-sample.txt" target="_blank">
+        SOAP Sample in txt format
+      </a>
+    </h3>
+    <pre style="background-color: #cccccc; border-radius: 5px;">
+    <code style="font-family: monospace;">
+         &lt;soapenv:Envelope
+          xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+          xmlns:hs="http://www.holidaywebservice.com/HolidayService_v2/"&gt;
+          &lt;soapenv:Body&gt;
+              &lt;hs:GetHolidaysForMonth&gt;
+                  &lt;hs:year&gt;2018&lt;/hs:year&gt;
+                  &lt;hs:countryCode>UnitedStates&lt;/hs:countryCode&gt;
+                  &lt;hs:month>11&lt;/hs:month&gt;
+             &lt;/hs:GetHolidaysForMonth&gt;
+         &lt;/soapenv:Body&gt;
+        &lt;/soapenv:Envelope&gt;
+    </code>
+    </pre>
+    <br/>
+  </div>
+
+  <hr/>
+  <h2>Tools to make requests:</h2>
+  <p><a href="https://extendsclass.com/soap-client-online.html" target="_blank">Online client</a> </p>
+  <p><a href="https://blog.postman.com/postman-makes-soap-requests-too/" target="_blank">Postman Makes SOAP Requests Too</a> </p>
+  <p><a href="https://app.boomerangapi.com/workspace" target="_blank">Boomerang - Workspace</a> </p>
+  <p><a href="https://preprod-salesapi.ndias.com/service.svc?wsdl" target="_blank">WSDL URL  (Sales)</a> </p>
+  <p><a href="https://graphical.weather.gov/xml/SOAP_server/ndfdXMLserver.php?wsdl" target="_blank">WSDL URL  (Weather)</a> </p>
+  <p><a href="https://sportdataapi.com/football-soccer-api#pricingSection" target="_blank">Sport DATA API</a></p>
+  <p>×
+    Possible CORS: Install Boomerang extension from the Web Store or update the extension to the latest version(v3.5.5+) and reload the app</p>
+  <p><a href="https://chrome.google.com/webstore/detail/boomerang-soap-rest-clien/eipdnjedkpcnlmmdfdkgfpljanehloah" target="_blank">Boomerang - SOAP & REST Client</a> </p>
+
+  <!-- HOME -->
+  <br/>
+  <div><h2><a href="../index.html">HOME</a></h2></div>
+
+</div>
+
+</body>
+</html>
